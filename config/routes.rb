@@ -8,8 +8,9 @@ Rails.application.routes.draw do
   #root 'welcome#index'
 Rails.application.routes.draw do
  
-  resources :articles
- 
+ resources :articles do
+  resources :comments
+end
   root 'welcome#index'
 end
   # Example of regular route:
